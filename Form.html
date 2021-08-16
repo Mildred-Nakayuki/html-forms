@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+      body{
+          margin: 0px;
+          
+      }
+      .main_container{
+          margin: 50px;
+          background-color: rgb(207, 215, 231);
+      }
+      .form_header{
+          text-align: center;
+          font-weight: 700;
+          font-size: large;
+          font-family: Georgia, 'Times New Roman', Times, serif !important;
+      }
+      .form_information{
+        padding: 20px;
+      }
+  </style>
+</head>
+<body>
+    <main>
+        <div class="main_container">
+            <div class="form_information">
+                <div class="form_header"><h1><span>EMPLOYEE</span> <span>BIO </span> <span>DATA</span></h1></div>
+                    <div class="form_data">
+                        <form class="form-horizontal" action="/action_page.php">
+                            <!-- fname -->
+                            <div class="form-group">
+                                <label class="control-label col-sm-2" for="surname">Surname:</label>
+                                <div class="col-sm-8">
+                                  <input type="text" class="form-control" id="surname" name="s_name" placeholder="Surname e.g Nakayuki" required>
+                                </div>
+                            </div>
+
+                            <!-- middle name -->
+                            <div class="form-group">
+                                <label class="control-label col-sm-2" for="middlename">Middle Name:</label>
+                                <div class="col-sm-8">
+                                  <input type="text" class="form-control" id="middlename" name="m_name" placeholder="Middle Name e.g Juliet">
+                                </div>
+                            </div>
+
+                            <!-- last name -->
+                            <div class="form-group">
+                                <label class="control-label col-sm-2" for="lastname">Last Name:</label>
+                                <div class="col-sm-8">
+                                  <input type="text" class="form-control" id="lastname" name="l_name" placeholder="Last Name e.g Mildred" required>
+                                </div>
+                            </div>
+
+                            
+
+                            <!-- DOB -->
+                            <div class="form-group">
+                                <label class="control-label col-sm-2" for="dob">Date of Birth:</label>
+                                <div class="col-sm-8">
+                                <input type="date" class="form-control" id="dob" name="dob" required>
+                                </div>
+                            </div>
+                            <!-- email -->
+                            <div class="form-group">
+                              <label class="control-label col-sm-2" for="email">Email:</label>
+                              <div class="col-sm-8">
+                                <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+                              </div>
+                            </div>
+                            <!-- gender -->
+                            <div class="form-group">
+                                <label for="gender" class="control-label col-sm-2">Gender</label>
+                                <div class="col-sm-8">
+                                    <select class="form-control" id="gender" required>
+                                        <option value="">Select Gender</option>
+                                        <option value="female">Female</option>
+                                        <option value="male">Male</option>
+                                      </select>
+                                </div>
+                            </div>
+
+                            <!-- phone -->
+                            <div class="form-group">
+                              <label class="control-label col-sm-2" for="phone">Phone Number:</label>
+                              <div class="col-sm-8">
+                                <input type="number" class="form-control" id="phone" placeholder="E.g 256703******" required>
+                              </div>
+                            </div>
+
+                            <div class="form-group">
+                              <label class="control-label col-sm-2">Skills</label>
+                              <div class="col-sm-offset-2 col-sm-10">
+                                <div class="checkbox">
+                                  <label><input type="checkbox"> Communication skills</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox"> Team work</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox"> Leadership</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox"> Reliability/dependability</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox"> Adaptability</label>
+                                </div>
+                                <div class="checkbox">
+                                  <label><input type="checkbox"> Others</label>
+                              </div>
+                              <div class="col-sm-8">
+                                <textarea class="form-control" rows="5" id="comment" maxlength="150" placeholder="Other skill include...................."></textarea>
+                              </div>
+                              </div>
+                            </div>
+                            <!-- Address -->
+                            <div class="form-group">
+                                <label class="control-label col-sm-2" for="country">District of Birth:</label>
+                                <div class="col-sm-8">
+                                  <input type="text" class="form-control" id="country" name="country" placeholder="E.g Mukono">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                              <label class="control-label col-sm-2">Marital Status</label>
+                                <div class="col-sm-offset-2 col-sm-10">
+                                  <div class="radio">
+                                    <label><input type="radio" name="optradio"> Married</label>
+                                  </div>
+                                  <div class="radio">
+                                      <label><input type="radio" name="optradio"> Single</label>
+                                  </div>
+                                
+                                </div>
+                            </div>
+                             <!-- gender -->
+                             <div class="form-group">
+                                <label for="food" class="control-label col-sm-2">Interest & Hobbies</label>
+                                <div class="col-sm-8">
+                                    <select multiple class="form-control" id="food">
+                                        <option value="Outdoor activities">Outdoor activities</option>
+                                        <option value="Football">Football</option>
+                                        <option value="Playing instruments">Playing instruments</option>
+                                        <option value="Traveling">Traveling</option>
+                                        <option value="Reading">Reading</option>
+                                        <option value="Story telling">Story telling</option>
+                                        <option value="Video games">Video games</option>
+                                        <option value="Dancing">Dancing</option>
+                                      </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                              <label class="control-label col-sm-2" for="comment">Any Comments:</label>
+                              <div class="col-sm-8">
+                                <textarea class="form-control" rows="5" id="comment" maxlength="150"></textarea>
+                              </div>
+                          </div>
+
+                            <br>
+                            <div class="form-group">
+                              <div class="col-sm-offset-2 col-sm-5">
+                                <button type="submit" class="btn btn-primary">Submit Form</button>
+                              </div>
+                            </div>
+                          </form>
+                    </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
